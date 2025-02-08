@@ -62,9 +62,9 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <ul
-        className={`absolute top-full left-0 w-full bg-indigo-400 flex flex-col items-center md:hidden transition-transform duration-300 ${
-          isMenuOpen ? "block" : "hidden"
-        }`}
+         className={`absolute  left-0 w-full bg-indigo-400 flex flex-col  md:hidden transition-transform duration-300 transform ${
+      isMenuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         <li className="py-4">
           <Link
