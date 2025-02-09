@@ -9,13 +9,23 @@ import About from "./components/about";
 import InfoOne from "./components/InfoOne";
 import InfoTwo from "./components/InfoTwo";
 import CTA from "./components/CTA";
+import Testimonials from "./components/Testimonials";
+import Bar from "./components/Bar";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-      <Route path="/"element={<><Home /><About /><InfoOne /><InfoTwo /><CTA /> </>}/>
+      <Route path="/"element={<>
+      <Home />
+      <About />
+      <InfoOne />
+      <InfoTwo />
+      <CTA />
+      <Testimonials/> 
+      <Bar/>
+      </>}/>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         
